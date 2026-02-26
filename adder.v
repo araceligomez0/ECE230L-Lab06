@@ -1,15 +1,15 @@
 module adder(
-    // Declare your A/B inputs
-    input wire A,
-    input wire B,
-    // Declare Y output
-    output wire Y,
-    // Declare carry output
-    output wire carry
+    input A, B,// Declare your A/B inputs
+    output Y,// Declare Y output
+    output carry// Declare carry output
 );
 
-    // Enter logic equation here
-    assign Y = A ^ B;
-    assign carry = A & B;
+    assign Y = (
+        A ^ B
+     );
+     
+     assign carry = (
+        A & B
+     );
 
 endmodule

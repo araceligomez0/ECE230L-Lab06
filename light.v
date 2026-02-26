@@ -1,12 +1,10 @@
 module light(
-    // Declare downstairs and upstairs input
-    input wire downstairs.
-    input wire upstairs,
-    // Declare stair light output
-    output wire stairlight,
+    input downstairs, upstairs,// Declare downstairs and upstairs input
+    output stair_light// Declare stair light output
 );
 
-    // Enter logic equation here
-    assign starlight = downstairs ^ upstairs;
+    assign stair_light = (
+        downstairs ^ upstairs
+    );
 
 endmodule
